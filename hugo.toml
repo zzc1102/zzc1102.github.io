@@ -1,0 +1,51 @@
+# 网站的基础访问主域名（必须替换成你自己的 GitHub 用户名）
+baseURL = 'https://你的GitHub用户名.github.io/'
+
+# 站点语言与标题
+languageCode = 'zh-cn'
+title = '我的读书与观影随笔'
+
+# 指定使用刚才下载的 PaperMod 主题
+theme = 'PaperMod'
+
+[params]
+  # 颜色外观：auto（跟随读者的系统/浏览器自动切换深色/浅色模式）
+  defaultTheme = 'auto'
+  
+  # 阅读体验增强功能
+  ShowReadingTime = true      # 显示文章预计阅读时间
+  ShowWordCount = true        # 显示正文字数统计
+  ShowToc = true              # 自动提取标题并生成大纲目录
+  TocOpen = false             # 目录默认折叠，保持文章版面整洁
+  ShowCopyCodeButton = true   # 代码块右上角显示一键复制按钮
+  ShowBreadCrumbs = true      # 顶部显示面包屑路径导航（例如：首页 > 文章 > 正文）
+
+  # 首页布局样式：开启个人名片模式（极度适合展示个人简介、随笔博客）
+  [params.profileMode]
+    enabled = true
+    title = "欢迎来到我的角落"
+    subtitle = "记录小说读后感、电影观后感与日常随笔。"
+    imageUrl = "/images/avatar.jpg" # 头像路径，对应 static/images/avatar.jpg
+    imageWidth = 110
+    imageHeight = 110
+    
+    # 首页上的快捷跳转按钮
+    [[params.profileMode.buttons]]
+      name = "全部文章"
+      url = "/posts"
+    [[params.profileMode.buttons]]
+      name = "分类标签"
+      url = "/tags"
+
+# 网站顶部的菜单导航栏
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 20

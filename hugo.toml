@@ -1,5 +1,5 @@
 # 网站的基础访问主域名（必须替换成你自己的 GitHub 用户名）
-baseURL = 'https://你的GitHub用户名.github.io/'
+baseURL = 'https://zzc1102.github.io/'
 
 # 站点语言与标题
 languageCode = 'zh-cn'

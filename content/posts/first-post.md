@@ -14,7 +14,7 @@ summary: "这是我使用 Hugo 和 GitHub Pages 搭建的个人独立博客。"
 ### 插入一张图片
 在 Markdown 中引用 `static/images/` 下的图片时，路径直接写 `/images/...` 即可：
 
-![书籍配图](/images/book.jpg)
+{{< figure src="/images/book.jpg" width="350px" caption="百年孤独" align="center" >}}
 
 ### 摘录
 > 回忆是一条没有尽头的路，一切以往的春天都不复存在。
